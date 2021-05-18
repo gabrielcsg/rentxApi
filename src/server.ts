@@ -3,6 +3,7 @@ import swaggerUi from 'swagger-ui-express';
 
 import { routes } from './routes';
 import swaggerFile from './swagger.json';
+import './database';
 
 
 const server = express();
@@ -12,4 +13,4 @@ server.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerFile));
 server.use(routes);
 
 
-server.listen(3335, () => console.log('Server running on: 3335'));
+server.listen(3333, () => console.log('Server running on: 3333'));
