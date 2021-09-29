@@ -1,4 +1,3 @@
-import "reflect-metadata";
 import { Router } from 'express';
 import { authenticateRoutes } from './authenticate.routes';
 import { categoriesRoutes } from './categories.routes';
