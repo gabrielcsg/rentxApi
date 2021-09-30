@@ -22,6 +22,7 @@ export async function ensureAuthenticated(
     const user = await usersRepostory.findById(user_id.toString());
     if (!user) throw new AppError('User does not exists', 401);
 
+    request.user = { id: user.id };
     next();
   } catch {
     throw new AppError('Invalid token', 401);
