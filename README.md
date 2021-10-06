@@ -3,7 +3,7 @@
 ## Cadastro de carros
 
 **RF - Requisitos Funcionais**\
-Deve ser possível cadastrar um carro.\
+Deve ser possível cadastrar um carro.
 
 **RN - Regras de negócio**\
 Não deve ser possível cadastrar um carro com uma placa já existente.\
